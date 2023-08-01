@@ -12,28 +12,31 @@ export function Register() {
                
             </div>
             <div id={styles.AutoLoginDiv}>
-                <div className={styles.wrapperLogoGoogle}>
-                    <FcGoogle size={24} />
-                </div>
+                    
+                    <div className={styles.wrapperLogoGoogle}>
+                        <FcGoogle size={24} />
+                    </div>
 
-                <input className={styles.wrapperAutoLogin} type="button" value="Continue com Google"  />
-                
-                <div className={styles.wrapperLogoFace}>
-                    <FaFacebook size={24} />
-                </div>
+                    <input className={styles.wrapperAutoLogin} type="button" value="Continue com Google"  />
+                    
+                    <div className={styles.wrapperLogoFace}>
+                        <FaFacebook size={24} />
+                    </div>
 
-                <input className={styles.wrapperAutoLogin} type="button" value="Continue com Facebook" />
+                    <input className={styles.wrapperAutoLogin} type="button" value="Continue com Facebook" />
 
-                <div className={styles.wrapperLogoApple}>
-                    <BsApple size={24} />
-                </div>
+                    <div className={styles.wrapperLogoApple}>
+                        <BsApple size={24} />
+                    </div>
 
-                <input className={styles.wrapperAutoLogin} type="button" value="Continue com Apple" />
+                    <input className={styles.wrapperAutoLogin} type="button" value="Continue com Apple" />
 
-                 
-                <div id={styles.Or}>
-                    <p>OU</p>
-                </div>
+                    
+                    <div id={styles.Or}>
+                        <p>OU</p>
+                    </div>
+            
+            </div>
                 <p className={styles.name}>Primeiro Nome</p>
                 <input type="name" name="" id="" placeholder="Coloque seu Primeiro Nome" className={styles.wrapperInputs}/>
 
@@ -44,8 +47,11 @@ export function Register() {
                 <input type="email" name="" id="" placeholder="Coloque seu Email" className={styles.wrapperInputs}/>
                 <input type="button" value="Continue" id={styles.buttonContinue}/>
 
-            </div>
-
+                <div id={styles.divProgress}>
+                    <span id={styles.actualProgress} className={styles.progress}></span>
+                    <span className={styles.progress}></span>
+                    <span className={styles.progress}></span>
+                </div>
         </div>
     )
 }
